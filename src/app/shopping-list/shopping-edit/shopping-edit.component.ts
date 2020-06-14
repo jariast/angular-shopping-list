@@ -9,7 +9,7 @@ export class ShoppingEditComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
