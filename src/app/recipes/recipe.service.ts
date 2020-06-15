@@ -50,4 +50,9 @@ export class RecipeService {
     this.recipes = this.recipes.map((r) => (r.id === id ? updatedRecipe : r));
     this.recipesChanged.next(this.recipes.slice());
   }
+
+  deleteRecipe(id: number) {
+    this.recipes = this.recipes.filter((r) => r.id !== id);
+    this.recipesChanged.next(this.recipes.slice());
+  }
 }
